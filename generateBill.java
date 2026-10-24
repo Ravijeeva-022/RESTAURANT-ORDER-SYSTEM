@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 class MenuItem {
@@ -35,8 +36,7 @@ public class generateBill {
         int choice;
 
         do {
-            System.out.println("
-================================");
+            System.out.println("\n================================");
             System.out.println(" RESTAURANT ORDER SYSTEM");
             System.out.println("================================");
             System.out.println("1. View Menu");
@@ -81,8 +81,7 @@ public class generateBill {
     }
 
     static void displayMenu() {
-        System.out.println("
----------- FOOD MENU ----------");
+        System.out.println("\n---------- FOOD MENU ----------");
         System.out.printf("%-5s %-15s %s%n",
                 "ID", "Item", "Price");
 
@@ -96,8 +95,7 @@ public class generateBill {
 
         while (true) {
             System.out.print(
-                    "
-Enter item ID (0 to finish): ");
+                    "\nEnter item ID (0 to finish): ");
 
             if (!sc.hasNextInt()) {
                 System.out.println("Enter a valid item ID.");
@@ -144,8 +142,7 @@ Enter item ID (0 to finish): ");
     static void generateBill() {
         double subtotal = 0;
 
-        System.out.println("
-========== FINAL BILL ==========");
+        System.out.println("\n========== FINAL BILL ==========");
         System.out.printf("%-15s %5s %10s %10s%n",
                 "Item", "Qty", "Price", "Total");
 
@@ -182,4 +179,4 @@ Enter item ID (0 to finish): ");
                 grandTotal);
         System.out.println("=================================");
     }
-          }
+}
